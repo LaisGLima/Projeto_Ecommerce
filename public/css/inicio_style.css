@@ -1,0 +1,277 @@
+/******configurações iniciais******/
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(14, 14, 14);
+}
+
+/******header******/
+header img {
+  cursor: pointer;
+}
+
+header #top {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 5px 2%;
+
+  background: rgb(37, 37, 37);
+}
+
+header #top #logo {
+  position: relative;
+  top: 0px;
+
+  width: 70px;
+  margin-right: 40px;
+}
+
+header #top #search-div {
+  height: 39px;
+  margin: 15px 0 50px 0;
+
+  background-color: #ffffff;
+  border: solid #cecece 2px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(55, 55, 55);
+}
+
+header #top #search-txt {
+  position: relative;
+  top: -5px;
+
+  height: 40%;
+  width: 553px;
+  padding: 0.5rem 1rem;
+
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+}
+
+header #top #search-button {
+  position: relative;
+  right: 10px;
+  width: 25px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+header #top .right {
+  position: relative;
+  width: 55px;
+  margin-right: 40px;
+  top: 10px;
+}
+
+
+
+
+/*********************/
+.hamburger{
+  position: relative;
+  top: 10px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 7px;
+  background-image: linear-gradient(90deg, #ff00c8 0%, #4441f5 50%, #8927fa 100%);
+  margin: 8px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-13px, 8px);
+}
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-12px, -9px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav{
+  position: fixed;
+  top: 11%;
+  left: 100%;
+  width: 300px;
+  height: 65.2vh;
+  display: block;
+  z-index: 98;
+  background-color: rgb(31, 31, 31);
+  border-radius: 0px 15px;
+  padding-top: 120px;
+  transition: 1s;
+  box-shadow: 1px 6px 15px black;
+}
+
+.mobile-nav.is-active{
+  left: 82%;
+}
+
+.a-nav{
+  display: block;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  margin-bottom: 45px;
+  padding: 16px 16px;
+  color: #d8d8d8;
+  border-radius: 5px;
+  background-color: #52238857;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.a-nav:hover{
+  background-color: #500aa1;
+}
+/*********************/
+
+
+/******NavBar******/
+nav {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 35px;
+
+  background-image: linear-gradient(90deg, #ee31c5 0%, #2421a7 50%, #522388 100%);
+}
+
+nav > div {
+  height: 30px;
+  margin-top: 2.7px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(20, 20, 20);
+}
+
+nav a {
+  margin: 3vw;
+
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: rgb(255,125,255);
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+
+/******slides******/
+.images {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.images img {
+  position: absolute;
+  top: 115px;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+
+.images .checked {
+  left:0;
+  opacity: 1;
+  transition: 1s;
+}
+
+
+.manual-navigation {
+  position: absolute;
+  bottom: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #FFF;
+  padding: 5px;
+  margin: 2vh 2vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn.checked, .manual-btn:hover {
+  background-color: #FFF;
+}
+
+
+/******mini-boxes******/
+.bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 20vh;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+}
+
+.bottom div {
+  display: flex;
+
+  margin: 4vw;
+  
+  background-image: linear-gradient(90deg, #ff00c8 0%, #2421a7 50%, #522388 100%);
+  border-radius: 50%;
+  cursor: pointer;
+  
+  transition: transform 0.3s;
+}
+
+.bottom div:hover {
+  transform: scale(1.1);
+  box-shadow: -1px 0px 15px rgb(145 0 89);
+}
+
+.bottom img {
+  width: 100%;
+  border-radius: 50%;
+  height: 110px;
+}

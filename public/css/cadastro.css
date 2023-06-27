@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #01012c,#8109dd ,#ff00d4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.box{
+    display: flex;
+    width: 930px;
+}
+.form-box{
+    background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur(40px);
+    width: 50%;
+    align-items: center;
+    padding: 30px 40px;
+    border-radius:20px  20px;
+}
+.form-box::before{
+    background-color: rgba(255,255,255,0.4);
+    align-items: center;
+    border-radius:20px  20px;
+    transform: rotate(-3deg);
+    z-index:-1;
+    insert:0;
+    position:absolute;
+    content:'';
+}
+.form-box h2{
+    font-size: 30px;
+}
+.form-box p a{
+    color:#ffffff79;
+    text-decoration: nome;
+}
+.form-box form{
+    margin:20px 0;
+}
+form .input-group{
+    margin-bottom: 15px;
+}
+form .input-group{
+    color: #2a2929;
+    font-weight: bold;
+    display:block;
+    margin-bottom: 5px;
+}
+form .input-group input{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255,255,255,0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form .input-group input:focus{
+    border-color:#03030369;
+}
+form .input-group button{
+    width: 100%;
+    height: 47px;
+    background: linear-gradient(to right, #0000007e,#00000091);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+}
+@media (max-width:930px) {
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width:500px){
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+
+}
