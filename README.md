@@ -1,3 +1,14 @@
+# Projeto E-commerce 
+
+## O site é um e-commerce funcional, que permite a compra e venda de produtos de forma online, com abas de cadastro e venda de produtos, login e cadastro de usuários. Também oferece busca de produto e contato para os desenvolvedores.
+
+### Linguagens PHP, Blade, HTML, CSS, JS
+### Atividade proposta pelo Prof.Marcos Forte Sales - Cadeira-Desenv.Web em Html5, Css, Javascript e Php - Estácio-Parangaba
+
+## Pegasus/Home
+![Estrutura Command](https://github.com/LaisGLima/Projeto_Ecommerce/blob/main/home_Pegasus.jpg)
+
+## About Laravel
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -6,8 +17,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
-## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
